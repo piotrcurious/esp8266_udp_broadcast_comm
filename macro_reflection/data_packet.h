@@ -30,4 +30,7 @@ packed struct data_packet {
 // define a delimiter to separate each element in the buffer
 #define DELIMITER ','
 
+// use a macro to define a list of all the struct elements and their values
+#define DATA_LIST DATA_ELEMENT (seqnumber, seqnumber, '0') DATA_ELEMENT (temperature, temperature, -10) DATA_ELEMENT (humidity, humidity, 50.5) DATA_ELEMENT (name, name, "ESP8266") DATA_ELEMENT (status, status, true)
+
 #endif
