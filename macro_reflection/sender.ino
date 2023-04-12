@@ -12,7 +12,8 @@ IPAddress broadcastIp (192, 168, 50, 255); // broadcast IP address of your netwo
 unsigned int remoteUdpPort = 4211; // remote port to send to
 
 // use a macro to define a list of all the struct elements and their values
-#define DATA_LIST DATA_ELEMENT (seqnumber, seqnumber, '0') DATA_ELEMENT (temperature, temperature, -10) DATA_ELEMENT (humidity, humidity, 50.5) DATA_ELEMENT (name, name, "ESP8266") DATA_ELEMENT (status, status, true)
+//#define DATA_LIST DATA_ELEMENT (seqnumber, seqnumber, '0') DATA_ELEMENT (temperature, temperature, -10) DATA_ELEMENT (humidity, humidity, 50.5) DATA_ELEMENT (name, name, "ESP8266") DATA_ELEMENT (status, status, true)
+// defined in data_packet.h 
 
 // use the macro to initialize the struct variable
 struct data_packet packettosend = {DATA_LIST};
